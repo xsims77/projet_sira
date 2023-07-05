@@ -12,13 +12,27 @@ class Membre{
      private $statut;
      private $date_enregistrement;
 
+     public function __construct($data = []){
+
+          foreach($data as $key => $value){
+               //création de la methode set...
+               $methode  = "set" . ucfirst(  $key ) ;
+
+               //teste si le setter existe
+               if( method_exists($this, $methode) ){
+                    //appel du setter et en paramètre la valeur ($value)
+                    $this->$methode($value);
+               }
+          }
+
+     }
      
      
 
      /**
       * Get the value of id_membre
       */
-     public function getIdMembre()
+     public function getId_membre()
      {
           return $this->id_membre;
      }
@@ -26,7 +40,7 @@ class Membre{
      /**
       * Set the value of id_membre
       */
-     public function setIdMembre($id_membre): self
+     public function setId_membre($id_membre): self
      {
           $this->id_membre = $id_membre;
 
@@ -162,7 +176,7 @@ class Membre{
      /**
       * Get the value of date_enregistrement
       */
-     public function getDateEnregistrement()
+     public function getDate_enregistrement()
      {
           return $this->date_enregistrement;
      }
@@ -170,7 +184,7 @@ class Membre{
      /**
       * Set the value of date_enregistrement
       */
-     public function setDateEnregistrement($date_enregistrement): self
+     public function setDate_enregistrement($date_enregistrement): self
      {
           $this->date_enregistrement = $date_enregistrement;
 
