@@ -1,194 +1,179 @@
 <?php
 
-class Membre
-{
-    private $id_membre;
-    private $pseudo;
-    private $mdp;
-    private $nom;
-    private $prenom;
-    private $email;
-    private $civilte;
-    private $statut;
-    private $date_enregistrement;
+class Membre{
 
-    /**
-     * Get the value of id_membre
-     */ 
-    public function getId_membre()
-    {
-        return $this->id_membre;
-    }
+     private $id_membre;
+     private $pseudo;
+     private $mdp;
+     private $nom;
+     private $prenom;
+     private $email;
+     private $civilite;
+     private $statut;
+     private $date_enregistrement;
 
-    /**
-     * Set the value of id_membre
-     *
-     * @return  self
-     */ 
-    public function setId_membre($id_membre)
-    {
-        $this->id_membre = $id_membre;
+     
+     
 
-        return $this;
-    }
+     /**
+      * Get the value of id_membre
+      */
+     public function getIdMembre()
+     {
+          return $this->id_membre;
+     }
 
-    /**
-     * Get the value of pseudo
-     */ 
-    public function getPseudo()
-    {
-        return $this->pseudo;
-    }
+     /**
+      * Set the value of id_membre
+      */
+     public function setIdMembre($id_membre): self
+     {
+          $this->id_membre = $id_membre;
 
-    /**
-     * Set the value of pseudo
-     *
-     * @return  self
-     */ 
-    public function setPseudo($pseudo)
-    {
-        $this->pseudo = $pseudo;
+          return $this;
+     }
 
-        return $this;
-    }
+     /**
+      * Get the value of pseudo
+      */
+     public function getPseudo()
+     {
+          return $this->pseudo;
+     }
 
-    /**
-     * Get the value of mdp
-     */ 
-    public function getMdp()
-    {
-        return $this->mdp;
-    }
+     /**
+      * Set the value of pseudo
+      */
+     public function setPseudo($pseudo): self
+     {
+          $this->pseudo = $pseudo;
 
-    /**
-     * Set the value of mdp
-     *
-     * @return  self
-     */ 
-    public function setMdp($mdp)
-    {
-        $this->mdp = $mdp;
+          return $this;
+     }
 
-        return $this;
-    }
+     /**
+      * Get the value of mdp
+      */
+     public function getMdp()
+     {
+          return $this->mdp;
+     }
 
-    /**
-     * Get the value of nom
-     */ 
-    public function getNom()
-    {
-        return $this->nom;
-    }
+     /**
+      * Set the value of mdp
+      */
+     public function setMdp($mdp): self
+     {
+          $this->mdp = $mdp;
 
-    /**
-     * Set the value of nom
-     *
-     * @return  self
-     */ 
-    public function setNom($nom)
-    {
-        $this->nom = $nom;
+          return $this;
+     }
 
-        return $this;
-    }
+     /**
+      * Get the value of nom
+      */
+     public function getNom()
+     {
+          return $this->nom;
+     }
 
-    /**
-     * Get the value of prenom
-     */ 
-    public function getPrenom()
-    {
-        return $this->prenom;
-    }
+     /**
+      * Set the value of nom
+      */
+     public function setNom($nom): self
+     {
+          $this->nom = $nom;
 
-    /**
-     * Set the value of prenom
-     *
-     * @return  self
-     */ 
-    public function setPrenom($prenom)
-    {
-        $this->prenom = $prenom;
+          return $this;
+     }
 
-        return $this;
-    }
+     /**
+      * Get the value of prenom
+      */
+     public function getPrenom()
+     {
+          return $this->prenom;
+     }
 
-    /**
-     * Get the value of email
-     */ 
-    public function getEmail()
-    {
-        return $this->email;
-    }
+     /**
+      * Set the value of prenom
+      */
+     public function setPrenom($prenom): self
+     {
+          $this->prenom = $prenom;
 
-    /**
-     * Set the value of email
-     *
-     * @return  self
-     */ 
-    public function setEmail($email)
-    {
-        $this->email = $email;
+          return $this;
+     }
 
-        return $this;
-    }
+     /**
+      * Get the value of email
+      */
+     public function getEmail()
+     {
+          return $this->email;
+     }
 
-    /**
-     * Get the value of civilte
-     */ 
-    public function getCivilte()
-    {
-        return $this->civilte;
-    }
+     /**
+      * Set the value of email
+      */
+     public function setEmail($email): self
+     {
+          $this->email = $email;
 
-    /**
-     * Set the value of civilte
-     *
-     * @return  self
-     */ 
-    public function setCivilte($civilte)
-    {
-        $this->civilte = $civilte;
+          return $this;
+     }
 
-        return $this;
-    }
+     /**
+      * Get the value of civilite
+      */
+     public function getCivilite()
+     {
+          return $this->civilite;
+     }
 
-    /**
-     * Get the value of statut
-     */ 
-    public function getStatut()
-    {
-        return $this->statut;
-    }
+     /**
+      * Set the value of civilite
+      */
+     public function setCivilite($civilite): self
+     {
+          $this->civilite = $civilite;
 
-    /**
-     * Set the value of statut
-     *
-     * @return  self
-     */ 
-    public function setStatut($statut)
-    {
-        $this->statut = $statut;
+          return $this;
+     }
 
-        return $this;
-    }
+     /**
+      * Get the value of statut
+      */
+     public function getStatut()
+     {
+          return $this->statut;
+     }
 
-    /**
-     * Get the value of date_enregistrement
-     */ 
-    public function getDate_enregistrement()
-    {
-        return $this->date_enregistrement;
-    }
+     /**
+      * Set the value of statut
+      */
+     public function setStatut($statut): self
+     {
+          $this->statut = $statut;
 
-    /**
-     * Set the value of date_enregistrement
-     *
-     * @return  self
-     */ 
-    public function setDate_enregistrement($date_enregistrement)
-    {
-        $this->date_enregistrement = $date_enregistrement;
+          return $this;
+     }
 
-        return $this;
-    }
+     /**
+      * Get the value of date_enregistrement
+      */
+     public function getDateEnregistrement()
+     {
+          return $this->date_enregistrement;
+     }
+
+     /**
+      * Set the value of date_enregistrement
+      */
+     public function setDateEnregistrement($date_enregistrement): self
+     {
+          $this->date_enregistrement = $date_enregistrement;
+
+          return $this;
+     }
 }
