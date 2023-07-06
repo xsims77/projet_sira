@@ -1,14 +1,25 @@
 <?php
+session_start();
 
 include "entities/Membre.php";
 
-$post = [
-     "id_membre" =>12,
-     "pseudo"    => "toto",
-     "prenom"    => "Jean",
-     "machin"    => 450
-];
+include "model/ModelGenerique.php";
 
-$m = new Membre($post);
+include "model/MembreModel.php";
 
-var_dump($m);
+include "controller/MembreController.php";
+
+include "views/header.phtml";
+include "views/home.phtml";
+
+$membre = new MembreController();
+
+$membre->membreAction();
+
+
+
+
+
+
+
+include "views/footer.phtml";
