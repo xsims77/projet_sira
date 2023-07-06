@@ -33,8 +33,9 @@ class MembreController
                     $membre = $membreMdl->connexion($_POST['pseudo'],$_POST['mdp']);
                     if ( $membre->getStatut() == 1 )
                     {
-                        // var_dump('coucou'); die();
-                        include "views/admin/admin.phtml";
+                        header("location: views/admin/admin.phtml");
+                    }else{
+                        header("location: views/membre/membre.phtml");
                     }
                 }
         
