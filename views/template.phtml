@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="bg-primary text-center p-3">
-        <h1 class="text-center"><a href="" class="text-white">Location de véhicule</a></h1>
+        <h1 class="text-center"><a href="." class="text-white">Location de véhicule</a></h1>
         <nav>
             <a href="?action=inscription" class="btn btn-success" >Inscription</a>
             <a href="?action=connexion" class="btn btn-success">Connexion</a>
@@ -21,3 +21,10 @@
     </header>
 
     <main class="container">
+        <?= $content ?? 'pas de vue'; ?>
+    </main>
+
+    <footer class="bg-primary text-white text-center p-3 mt-5">
+        <a href="" class="text-white text-decoration-none">mentions légales</a>
+        <a href="" class="text-white text-decoration-none">Conditions générales de ventes</a>
+    </footer>
